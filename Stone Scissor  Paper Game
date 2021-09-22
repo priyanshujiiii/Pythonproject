@@ -1,0 +1,42 @@
+import random
+print('Welcome to SPS')
+a = ['stone', 'paper', 'scissor']
+
+print('ENTER NAME OF PLAYER 1 NAME')
+player_1  = str(input())
+print(player_1 + ' Welcome tp SPS')
+
+print('ENTER NAME OF PLAYER 2 NAME')
+player_2 = str(input())
+print(player_2 + ' Welcome tp SPS')
+
+print('lets start a game : Press enter to start a game')
+idk = str(input())
+
+print('PLAYER 1 : Press ANY NUM for start A GAME ')
+PLAYER_IN = str(input())
+b = random.choice(a)
+print( player_1 +' : '+ b)
+print('PLAYER 2 : Press ANY NUM for start A GAME ')
+PLAYER_IN3 = int(input())
+k = random.choice(a)
+print(player_2 + ' : '+ k)
+
+if b == 'stone' and k == 'stone':
+    print(player_1 + 'and'+ player_2 + ' the match was tied')
+if b == 'paper' and k == 'stone' :
+    print( player_1+' : you win '+ player_2 + '  : try well next time')
+if b == 'scissor' and k == 'stone':
+    print(player_2+' : you win '+ player_1 + '  : try well next time')
+if b == 'stone' and k == 'paper':
+    print(player_2+' : you win '+ player_1+ '  : try well next time')
+if b == 'paper' and k == 'paper':
+    print(player_1 + 'and'+ player_2 + ' the match was tied')
+if b == 'scissor' and k == 'paper':
+    print(player_1+' : you win '+ player_2 + '  : try well next time')
+if b == 'stone' and k == 'scissor':
+    print(player_1+' : you win '+ player_2 + '  : try well next time')
+if b == 'paper' and k == 'scissor':
+    print(player_2+' : you win '+ player_1 + '  : try well next time')
+if b == 'scissor' and k == 'scissor':
+    print(player_1 + 'and'+ player_2 + ' the match was tied')
