@@ -1,0 +1,36 @@
+# Python Project Idea – The objective of this project is to implement the hangman game using Python.
+# This project doesn’t require any external modules rather just needs random and time modules of Python.
+# Python functions and loops are enough to develop a hangman game
+
+
+import random
+
+print('HANGMAN GAME')
+print('LETS PLAY')
+print('Enter your name')
+Name = str(input())
+print('hi '+Name+' lets play')
+a = {'P_tch_or_':'Patchwork','Fe_ocio_s':'Ferocious','Fi_sip_rou_':'Fissiparous','Hap_ine_s':'Happiness',
+     'Hu_ili_tion':'Humiliation','B_ief':'Brief','D_cl_ne':'Decline','S_ti_fy':'Satisfy'}
+
+while True:
+    print(" Press enter for playing game or Press 'n' for qutting game")
+    g = str(input())
+    if g == 'n':
+        print('QUITTING A GAME')
+        break
+    else:
+        print('loading...')
+    def quiz_me(n=20):
+        quiz_base = list(a.keys())
+        for _ in range(n):
+            global key
+            key = random.choice(quiz_base)
+            return key
+    print(quiz_me(1))
+    c = str(input())
+    if a[key] == c:
+        print(Name + ' CORRECT ONE. ')
+    else:
+        print(Name + ' WRONG ONE .')
+    print('You want a try again')
