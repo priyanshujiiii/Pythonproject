@@ -1,0 +1,11 @@
+# Email Slicer Project
+print('Enter email id')
+a = str(input())
+# Email Slicer Project – The email slicer is a handy program to get the username and domain name from an email address.
+# You can customize and send a message to the user with this information.
+b = a.index('@')
+n = a.index('.')
+h = a[b+1:n]
+n = a[0:b]
+print('Your Domain Host name is : '+ h)
+print('Your User Name: '+n)
